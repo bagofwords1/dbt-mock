@@ -1,0 +1,23 @@
+version: 2
+
+models:
+  - name: dim_customers
+    description: "Dimension table for customers with their rental statistics"
+    columns:
+      - name: customer_id
+        description: "Primary key of the customer dimension"
+        tests:
+          - unique
+          - not_null
+      - name: first_name
+        description: "Customer's first name"
+      - name: last_name
+        description: "Customer's last name"
+      - name: email
+        description: "Customer's email address"
+      - name: active
+        description: "Whether the customer is active (1) or not (0)"
+      - name: total_rentals
+        description: "Total number of rentals by this customer"
+      - name: total_amount_paid
+        description: "Total amount paid by this customer" 

@@ -1,0 +1,36 @@
+version: 2
+
+metrics:
+  - name: active_customers
+    label: Active Customers
+    model_ref: ref('dim_customers')
+    description: "Count of active customers"
+    calculation_method: count_distinct
+    expression: customer_id
+    filters:
+      - field: active
+        operator: '='
+        value: '1'
+    dimensions:
+      - city
+      - country
+
+  - name: average_customer_spend
+    label: Average Customer Spend
+    model_ref: ref('dim_customers')
+    description: "Average amount spent per customer"
+    calculation_method: average
+    expression: total_amount_paid
+    dimensions:
+      - city
+      - country
+
+  - name: customer_lifetime_value
+    label: Customer Lifetime Value
+    model_ref: ref('dim_customers')
+    description: "Total revenue generated per customer"
+    calculation_method: sum
+    expression: total_amount_paid
+    dimensions:
+      - city
+      - country 

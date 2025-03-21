@@ -1,0 +1,35 @@
+version: 2
+
+metrics:
+  - name: total_rental_revenue
+    label: Total Rental Revenue
+    model_ref: ref('fact_payments')
+    description: "Total revenue from all rentals"
+    calculation_method: sum
+    expression: amount
+    timestamp: payment_date
+    time_grains: [day, week, month, quarter, year]
+    dimensions:
+      - staff_id
+      - store_id
+      - customer_id
+
+  - name: rental_count
+    label: Number of Rentals
+    model_ref: ref('fact_daily_rentals')
+    description: "Total number of rentals"
+    calculation_method: sum
+    expression: total_rentals
+    timestamp: rental_day
+    time_grains: [day, week, month, quarter, year]
+    dimensions:
+      - store_id
+
+  - name: average_rental_duration
+    label: Average Rental Duration
+    model_ref: ref('fact_daily_rentals')
+    description: "Average duration of rentals in days"
+    calculation_method: average
+    expression: "{{ calculate_rental_duration('return_date', 'rental_date') }}"
+    timestamp: rental_day
+    time_grains: [day, week, month, quarter, year] 

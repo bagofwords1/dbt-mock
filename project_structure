@@ -1,0 +1,36 @@
+├── dbt_project.yml
+├── models
+│   └── dvdrental
+│       ├── dims
+│       │   ├── dim_actors.sql
+│       │   ├── dim_actors.yml
+│       │   ├── dim_customers.sql
+│       │   ├── dim_customers.yml
+│       │   ├── dim_films.sql
+│       │   ├── dim_films.yml
+│       │   ├── dim_staff.sql
+│       │   └── dim_staff.yml
+│       ├── facts
+│       │   ├── fact_daily_rentals.sql
+│       │   ├── fact_daily_rentals.yml
+│       │   ├── fact_payments.sql
+│       │   └── fact_payments.yml
+│       └── staging
+│           ├── base
+│           │   ├── base_rentals.sql
+│           │   └── base_payments.sql
+│           ├── stg_actors.sql
+│           ├── stg_customers.sql
+│           ├── stg_films.sql
+│           ├── stg_inventory.sql
+│           ├── stg_payments.sql
+│           └── stg_rentals.sql
+├── metrics
+│   ├── rental_metrics.yml
+│   ├── customer_metrics.yml
+│   └── film_metrics.yml
+├── macros
+│   ├── generate_film_id.sql
+│   └── calculate_rental_duration.sql
+└── seeds
+    └── film_ratings.csv 

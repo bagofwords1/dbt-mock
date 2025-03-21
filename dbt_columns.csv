@@ -1,0 +1,8 @@
+Resource,Column Name,Description,Data Type,Tests,Meta
+model.dim_customers,customer_id,Primary key of the customer dimension,,"['unique', 'not_null']",{}
+model.dim_customers,first_name,Customer's first name,,[],{}
+model.dim_customers,last_name,Customer's last name,,[],{}
+model.dim_customers,email,Customer's email address,,[],{}
+model.dim_customers,active,Whether the customer is active (1) or not (0),,[],{}
+model.dim_customers,total_rentals,Total number of rentals by this customer,,[],{}
+model.dim_customers,total_amount_paid,Total amount paid by this customer,,[],{}
