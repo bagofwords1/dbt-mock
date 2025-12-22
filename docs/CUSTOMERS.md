@@ -1,3 +1,9 @@
+---
+alwaysApply: true
+references: 
+  - public.customer
+---
+
 # 👤 Customer Domain — DVD Rental Database
 
 > **Purpose:** Understanding customer behavior, segmentation, and lifetime value.

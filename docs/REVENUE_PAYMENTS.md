@@ -1,3 +1,10 @@
+---
+alwaysApply: false
+references:
+  - public.payment
+  - public.rental
+---
+
 # 💰 Revenue & Payments Domain — DVD Rental Database
 
 > **Purpose:** Financial analysis, revenue tracking, payment processing, and monetary metrics.
