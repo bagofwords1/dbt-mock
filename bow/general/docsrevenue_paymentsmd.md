@@ -1,17 +1,20 @@
 ---
-status: published
+status: archived
 load_mode: intelligent
 category: general
+references:
+  - public.payment
+  - public.rental
 ---
 
 # docs/REVENUE_PAYMENTS.md
 
 # 💰 Revenue & Payments Domain — DVD Rental Database
-
+great
 > **Purpose:** Financial analysis, revenue tracking, payment processing, and monetary metrics.
 
 ---
-hi hi
+
 ## Domain Overview
 
 The Revenue domain tracks all monetary transactions. Every rental generates a payment, connecting customers to revenue through staff-processed transactions at specific stores.

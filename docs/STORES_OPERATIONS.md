@@ -1,7 +1,15 @@
+---
+status: published
+load_mode: always
+category: general
+---
+
+# docs/STORES_OPERATIONS.md
+
 # 🏪 Stores & Operations Domain — DVD Rental Database
 
 > **Purpose:** Store locations, staff management, and operational performance metrics.
-
+hi hi
 ---
 
 ## Domain Overview
