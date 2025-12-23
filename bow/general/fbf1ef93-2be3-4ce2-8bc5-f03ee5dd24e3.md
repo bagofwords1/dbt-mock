@@ -1,0 +1,7 @@
+---
+status: published
+load_mode: always
+category: general
+---
+
+Best sellers are tracks that appeared in the top 5 charts for at least 3 consecutive months.
