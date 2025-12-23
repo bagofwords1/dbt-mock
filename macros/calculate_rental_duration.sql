@@ -1,8 +1,12 @@
-{% macro calculate_rental_duration(return_date, rental_date) %}
-    case 
-        when {{ return_date }} is null then 
-            datediff('day', {{ rental_date }}, current_date)
-        else 
-            datediff('day', {{ rental_date }}, {{ return_date }})
-    end
-{% endmacro %} 
+---
+status: published
+load_mode: intelligent
+category: general
+---
+
+# calculate_rental_duration
+
+# calculate_rental_duration
+11
+**Type:** dbt macro
+**Path:** `macros/calculate_rental_duration.sql`
