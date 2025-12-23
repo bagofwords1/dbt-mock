@@ -1,5 +1,13 @@
-# 🎬 Films & Inventory Domain — DVD Rental Database
+---
+category: general
+load_mode: always
+status: published
+---
 
+# docs/FILMS_INVENTORY.md
+
+# 🎬 Films & Inventory Domain — DVD Rental Database
+123
 > **Purpose:** Film catalog, categories, ratings, and physical inventory management.
 
 ---
