@@ -1,7 +1,9 @@
+# docs/RENTALS.md
+
 # 📀 Rentals Domain — DVD Rental Database
 
 > **Purpose:** Tracking rental transactions, patterns, duration, and operational volume.
-
+123
 ---
 
 ## Domain Overview
